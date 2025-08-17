@@ -1,0 +1,10 @@
+ext {
+    extName = 'Hades no Fansub'
+    extClass = '.HadesNoFansub'
+    themePkg = 'madara'
+    baseUrl = 'https://hadesnofansub.com'
+    overrideVersionCode = 4
+    isNsfw = true
+}
+
+apply from: "$rootDir/common.gradle"

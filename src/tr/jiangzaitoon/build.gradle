@@ -1,0 +1,10 @@
+ext {
+    extName = 'Jiangzaitoon'
+    extClass = '.Jiangzaitoon'
+    themePkg = 'madara'
+    baseUrl = 'https://jiangzaitoon.lgbt'
+    overrideVersionCode = 12
+    isNsfw = true
+}
+
+apply from: "$rootDir/common.gradle"
