@@ -9,7 +9,7 @@ class Senkognito : Senkuro("Senkognito", "https://ne.senkognito.com", "ru") {
 
     private val preferences: SharedPreferences by getPreferencesLazy()
 
-    private var domain: String? = if (preferences.getBoolean(redirect_PREF, true)) "https://ne.senkognito.com" else "https://senkuro.me"
+    private var domain: String? = if (preferences.getBoolean(redirect_PREF, true)) "https://ne.senkognito.com" else "https://senkuro.com"
     override val baseUrl: String = domain.toString()
     override fun setupPreferenceScreen(screen: androidx.preference.PreferenceScreen) {
         val domainRedirect = androidx.preference.CheckBoxPreference(screen.context).apply {
